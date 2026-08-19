@@ -1,0 +1,17 @@
+{
+  "name": "btvn_m4_s4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:api": "newman run BT9_NewmanTest/postman/M4_S4_BT9.postman_collection.json -e BT9_NewmanTest/postman/BTVN_M4_Env.postman_environment.json -r cli,htmlextra --reporter-htmlextra-export BT9_NewmanTest/reports/report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "type": "module"
+}
